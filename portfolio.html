@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">TJ</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vincent Sedimo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" >About</a></li>
+          <li><a href="#experience" >Experience</a></li>
+          <li><a href="#projects" >Projects</a></li>
+          <li><a href="#contact" >Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440994810_440455795232908_1294986068991505813_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF77yXmVbfRvmhACoErZz-Zv8CH1XEg7gy_wIfVcSDuDDBybbK3dS6a57zR1ZPEsI-YeYTvJu-TF7HMS9quSbCX&_nc_ohc=UmQYk9xND1IQ7kNvgGczBjp&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QF9SCxfpEgvO7g4GONB_7TlEg2K21u-jxFx2Fdf61UA2Q&oe=665ADD71" alt="Vincent Sedimo profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vincent Sedimo</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/440850476_446467267876222_829750954038675360_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEWGTNqjB4YclR7lkKwjTQQ5ey52Kci6UPl7LnYpyLpQymKG5wqMCj-YjWSe9ltfk3bx-R3EtWroXiXBkN7OsFI&_nc_ohc=RFQfG-arlmsQ7kNvgHYUN9V&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QEaMMZx-0QUZ_K4m4Lk7s_NbOjAIJo0OlQxD6uWqF5LPA&oe=665ACF22"
+            alt="My LinkedIn profile"
+            class="icon"
+          />
+          <img
+            src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/346096967_1215944639065467_7750184634798306560_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHBbemH_P8HoYp_mwzybVc3lMi5AB5uyGmUyLkAHm7IaaIJDsvTMtbV66QajhcIwyFu86JRo83RUyELeCB9x1NT&_nc_ohc=V-yxtySlYzIQ7kNvgGQuqaM&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QHjrZdkVGavGiKQJnZaToFMIf13JX9-qg3Kq71XFoLYJw&oe=665AB04F"
+            alt="My Github profile"
+            class="icon"
+           
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440994810_440455795232908_1294986068991505813_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF77yXmVbfRvmhACoErZz-Zv8CH1XEg7gy_wIfVcSDuDDBybbK3dS6a57zR1ZPEsI-YeYTvJu-TF7HMS9quSbCX&_nc_ohc=UmQYk9xND1IQ7kNvgGczBjp&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QF9SCxfpEgvO7g4GONB_7TlEg2K21u-jxFx2Fdf61UA2Q&oe=665ADD71"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/440825020_7238890436219944_6078712246600000782_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGQA8mqnb9zHgkFX6lIqFTcczMK146O3fpzMwrXjo7d-sr2gmBm5NOAzkdrSUOjr0Wxz2FpaEmr90P34jTF2gyF&_nc_ohc=0RfyTtQfMIUQ7kNvgEY1Idx&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QFYVSNn3X7KhpVvWqZ98sUH-p74PUHp_HnqE18Z233ZWA&oe=665AD5E2"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/437583842_1129313848861521_7585174647524297420_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGOHFoL5wWmMFoSXJrq88y2krxxv6CJp_OSvHG_oImn8xE7NfypapGG8aofw5LPniflL3zxUHC5nGmD-DuxfZGn&_nc_ohc=T2OxOssjkP0Q7kNvgHtOPnf&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QEbS3v9KmIDPeelg__OWgVXFY2kjatCjm7cWySKfy2dQA&oe=665AAE52"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BSIT Bachelors Degree<br />MIT Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                With a curious mind and a penchant for problem-solving, I'm Vincent Sedimo, a seasoned professional in Frontend Developer. Over 5 years, I've delved deep into the realms of software development, constantly seeking innovative solutions at the juncture of developing softwares, applications, and such. From conceptualization to execution, I thrive on the creative process, known for exceeding expectations and delivering impactful results. My passion for technology drives me to explore the nuances of Frontend Development, infusing each project with a blend of creativity and strategic vision. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440840527_1457994901590443_455268310348920531_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGFneaqPW9hls_lAmivWDYb2oapW9AQAvDahqlb0BAC8M2xGqFW_Pq2BBDKaP4Oc60aMVbkB4yBz4iiqmGkp5e-&_nc_ohc=dEeIP77XewwQ7kNvgETRKB5&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QEQGQ6ItH1ib7oF9TMnZJFkx1g9QhrIXOA6giLWLM3Syg&oe=665AA68C"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14025/14025484.png?semt=ais_hybrid"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440840527_1457994901590443_455268310348920531_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGFneaqPW9hls_lAmivWDYb2oapW9AQAvDahqlb0BAC8M2xGqFW_Pq2BBDKaP4Oc60aMVbkB4yBz4iiqmGkp5e-&_nc_ohc=dEeIP77XewwQ7kNvgETRKB5&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QEQGQ6ItH1ib7oF9TMnZJFkx1g9QhrIXOA6giLWLM3Syg&oe=665AA68C"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://img.freepik.com/free-psd/clean-modern-resume-portfolio-cv-template_120329-3607.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://external-preview.redd.it/RJqYvcW1mFuUl89s4a4FgicJJRF93P_PRfP-WnVwAak.jpg?width=640&crop=smart&auto=webp&s=1489792b64c6d69b9b3a3f4c6c277b3e1efe584c"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1200/1*qWu7cD0aIKBDZCpYePYkog.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"1
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440840527_1457994901590443_455268310348920531_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGFneaqPW9hls_lAmivWDYb2oapW9AQAvDahqlb0BAC8M2xGqFW_Pq2BBDKaP4Oc60aMVbkB4yBz4iiqmGkp5e-&_nc_ohc=dEeIP77XewwQ7kNvgETRKB5&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QEQGQ6ItH1ib7oF9TMnZJFkx1g9QhrIXOA6giLWLM3Syg&oe=665AA68C"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqDJa96IckiGtMm2abmOymJIsTxtk3RJIzsO01InWbA&s"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">vincentsedimo03@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+            <img
+              src="https://cdn-icons-png.freepik.com/256/725/725624.png?semt=ais_hybrid"
+              alt="Phone icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="Contact Number">+63 985 540 4010</a></p>
+          </div>
+        
+        <div class="contact-info-container">
+          <img
+            src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/440850476_446467267876222_829750954038675360_n.png?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEWGTNqjB4YclR7lkKwjTQQ5ey52Kci6UPl7LnYpyLpQymKG5wqMCj-YjWSe9ltfk3bx-R3EtWroXiXBkN7OsFI&_nc_ohc=RFQfG-arlmsQ7kNvgHYUN9V&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QEaMMZx-0QUZ_K4m4Lk7s_NbOjAIJo0OlQxD6uWqF5LPA&oe=665ACF22"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vincent Sedimo. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
