@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #quote {
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 600px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="quote">
+    <p id="quoteText">Click the button to generate a quote!</p>
+    <button onclick="generateQuote()">Generate Quote</button>
+  </div>
+
+  <script>
+    
+    const quotes = [
+        {
+           quote: "<b>“In the middle of difficulty lies opportunity.”</b>",
+           author: "- Albert Einstein",
+        },
+        {
+            quote:"<b>“Whatever you do, do it well.”</b>",
+            author: " — Walt Disney",
+        },
+        {
+            quote: "<b>“Walk slowly, but never walk backward.”</b>",
+            author: "— Abraham Lincoln",
+        },
+        {
+            quote:"<b>“Nobody can go back and start a new beginning, but anyone can start today and make a new ending”</b>",
+            author:"— Maria Robinson" ,
+        },
+        {
+            quote: "<b>“The meaning of life is to give life meaning.”</b>",
+            author: "— Ken Hudgins",
+        },
+                                                                                // 
+        {
+            quote: "<b>“This life is like a swimming pool. You dive into the water, but you can’t see how deep it is.”</b>",
+            author: "— Dennis Rodman",
+        },
+        {
+            quote: "<b>“Life is really simple, but we insist on making it complicated.”</b>",
+            author: "— Confucius",
+        },
+        {
+            quote: "<b>“You will not be punished for your anger, you will be punished by your anger.”</b>",
+            author: "— Buddha",
+        },
+        {
+            quote: "<b>“Never make fun of someone who mispronounces a word. It means they learned it by reading.”</b>",
+            author: "— Vynce",
+        },
+        {
+            quote: "<b>“Take time like the river that never grows stale. Keep going and steady. No hurry, no rush.”</b>",
+            author: "—- Rumi",
+        },
+        {
+            quote: "<b>“Judge a man by his questions rather than his answers.”</b>",
+            author: "— Voltaires",
+        },
+        {
+            quote: "<b>“Anything becomes interesting if you look at it long enough.”</b>",
+            author: "— Gustave Flaubert",
+        },
+        {
+            quote: "<b>“Everyone thinks of changing the world, but no one thinks of changing himself.”</b>",
+            author: "— Leo Tolstoy",
+        },
+        {
+            quote: "<b>“Determine your priorities and focus on them.” </b>",
+            author: "— Eileen McDargh",
+        },
+        {
+            quote: "<b>“The more you know who you are, and what you want, the less you let things upset you.”</b>",
+            author: " — Stephanie Perkins",
+        }
+    
+
+        
+    ];
+   
+
+    function generateQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        const randomQuote = quotes[randomIndex];
+        const quoteText = randomQuote.quote;
+        const authorText = randomQuote.author;
+    document.getElementById('quoteText').innerHTML = `"${quoteText}"<br>- ${authorText}`;
+}
+  </script>
+</body>
+</html>
